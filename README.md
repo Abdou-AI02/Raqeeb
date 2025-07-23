@@ -83,7 +83,7 @@ Face Detection: Each captured frame is converted to grayscale and processed to d
 
 Liveness Check (Anti-Spoofing): This is a critical security step to prevent fraud.
 
-Once a face is detected, the system employs dlib's shape predictor model to map 68 specific facial landmarks (the corners of the eyes, nose, mouth, etc.).
+If a face is detected, the system employs dlib's shape predictor model to map 68 specific facial landmarks (the corners of the eyes, nose, mouth, etc.).
 
 It then calculates the Eye Aspect Ratio (EAR) for both eyes. The EAR is a mathematical ratio derived from the distances between these landmarks. The value is relatively constant when an eye is open and drops sharply towards zero when an eye closes.
 
@@ -101,7 +101,7 @@ Database Interaction & Action:
 
 If Recognized: The system queries the SQLite database to check if the identified employee has already been marked present for the current day. If not, it inserts a new record into the attendance table with the employee's name and the current timestamp.
 
-If Unknown: If the face does not match any known employee with sufficient confidence, the system saves a snapshot of the person to the unknown_visitors directory and triggers an email alert to the administrator.
+If Unknown: If the face does not match any known employee with sufficient confidence, the system saves a snapshot of the person to the unknown_visitors folder and triggers an email alert to the administrator.
 
 Real-Time UI Update: The application's main interface, built with ttkbootstrap, is updated instantly to reflect the new attendance log and display relevant system status messages (e.g., "Liveness Verified", "Recognized: [Name]").
 
@@ -232,19 +232,28 @@ A webcam connected to your system.
 Step 1: Clone & Set Up a Virtual Environment
 A virtual environment is highly recommended to avoid conflicts with other Python projects.
 
-# Clone the repository (replace [YOUR-REPO-NAME] with your repository name)
+Clone the repository (replace [YOUR-REPO-NAME] with your repository name):
+
 git clone [https://github.com/Abdou-AI02/](https://github.com/Abdou-AI02/)[YOUR-REPO-NAME].git
+
+Navigate into the project directory:
+
 cd [YOUR-REPO-NAME]
 
-# Create and activate a virtual environment
+Create and activate a virtual environment:
+
 python -m venv venv
-# On Windows
+
+Activate on Windows:
+
 venv\Scripts\activate
-# On macOS/Linux
+
+Activate on macOS/Linux:
+
 source venv/bin/activate
 
 Step 2: Install Dependencies
-This command reads the requirements.txt file and installs all the necessary libraries. This may take a few minutes, as some libraries like tensorflow are large.
+This command reads the requirements.txt file and installs all the necessary libraries. This may take a few minutes.
 
 pip install -r requirements.txt
 
@@ -336,11 +345,17 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 Fork the Project
 
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Create your Feature Branch:
 
-Commit your Changes (git commit -m 'Add some AmazingFeature')
+git checkout -b feature/AmazingFeature
 
-Push to the Branch (git push origin feature/AmazingFeature)
+Commit your Changes:
+
+git commit -m "Add some AmazingFeature"
+
+Push to the Branch:
+
+git push origin feature/AmazingFeature
 
 Open a Pull Request
 
@@ -412,23 +427,30 @@ Python 3.8 أو أحدث.
 كاميرا ويب متصلة بجهازك.
 
 الخطوة 1: استنساخ المشروع وإعداد بيئة افتراضية
-# استنساخ المستودع (استبدل [YOUR-REPO-NAME] باسم المستودع الخاص بك)
+استنساخ المستودع (استبدل [YOUR-REPO-NAME] باسم المستودع الخاص بك):
+
 git clone [https://github.com/Abdou-AI02/](https://github.com/Abdou-AI02/)[YOUR-REPO-NAME].git
+
+الانتقال إلى مجلد المشروع:
+
 cd [YOUR-REPO-NAME]
 
-# إنشاء وتفعيل بيئة افتراضية
+إنشاء وتفعيل بيئة افتراضية:
+
 python -m venv venv
-# على نظام Windows
+
+تفعيل البيئة على ويندوز:
+
 venv\Scripts\activate
-# على نظام macOS/Linux
+
+تفعيل البيئة على ماك/لينكس:
+
 source venv/bin/activate
 
 الخطوة 2: تثبيت المكتبات المطلوبة
 pip install -r requirements.txt
 
 الخطوة 3: تحميل نموذج dlib
-يتطلب اكتشاف معالم الوجه نموذجًا مدربًا مسبقًا.
-
 قم بتنزيل النموذج من http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2.
 
 استخرج ملف shape_predictor_68_face_landmarks.dat وضعه في المجلد الرئيسي للمشروع.
