@@ -12,8 +12,8 @@ An advanced, real-time facial recognition system built with Python to automate e
 
 <p>
 <a href="#-table-of-contents"><strong>Table of Contents</strong></a> •
-<a href="https://www.google.com/search?q=https://github.com/Abdou-AI02/[YOUR-REPO-NAME]/issues">Report Bug</a> •
-<a href="https://www.google.com/search?q=https://github.com/Abdou-AI02/[YOUR-REPO-NAME]/issues">Request Feature</a>
+<a href="https://www.google.com/search?q=https://github.com/Abdou-AI02/Raqeeb/issues">Report Bug</a> •
+<a href="https://www.google.com/search?q=https://github.com/Abdou-AI02/Raqeeb/issues">Request Feature</a>
 </p>
 
 </div>
@@ -232,13 +232,13 @@ A webcam connected to your system.
 Step 1: Clone & Set Up a Virtual Environment
 A virtual environment is highly recommended to avoid conflicts with other Python projects.
 
-Clone the repository (replace [YOUR-REPO-NAME] with your repository name):
+Clone the repository (replace Raqeeb with your repository name if different):
 
-git clone [https://github.com/Abdou-AI02/](https://github.com/Abdou-AI02/)[YOUR-REPO-NAME].git
+git clone [https://github.com/Abdou-AI02/Raqeeb.git](https://github.com/Abdou-AI02/Raqeeb.git)
 
 Navigate into the project directory:
 
-cd [YOUR-REPO-NAME]
+cd Raqeeb
 
 Create and activate a virtual environment:
 
@@ -427,13 +427,13 @@ Python 3.8 أو أحدث.
 كاميرا ويب متصلة بجهازك.
 
 الخطوة 1: استنساخ المشروع وإعداد بيئة افتراضية
-استنساخ المستودع (استبدل [YOUR-REPO-NAME] باسم المستودع الخاص بك):
+استنساخ المستودع (استبدل Raqeeb باسم المستودع الخاص بك إذا كان مختلفًا):
 
-git clone [https://github.com/Abdou-AI02/](https://github.com/Abdou-AI02/)[YOUR-REPO-NAME].git
+git clone [https://github.com/Abdou-AI02/Raqeeb.git](https://github.com/Abdou-AI02/Raqeeb.git)
 
 الانتقال إلى مجلد المشروع:
 
-cd [YOUR-REPO-NAME]
+cd Raqeeb
 
 إنشاء وتفعيل بيئة افتراضية:
 
